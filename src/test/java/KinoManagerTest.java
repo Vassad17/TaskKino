@@ -5,7 +5,7 @@ import ru.netology.kino.KinoManager;
 public class KinoManagerTest {
 
     @Test
-    public void shouldAddMovie() {
+    public void shouldAddFilms() {
         KinoManager manager = new KinoManager();
 
         manager.addFilms("Дедпул");
@@ -17,7 +17,7 @@ public class KinoManagerTest {
     }
 
     @Test
-    public void shouldAddSeveralMovies() {
+    public void shouldAddSeveralFilms() {
         KinoManager manager = new KinoManager();
 
         manager.addFilms("Мстители");
@@ -31,7 +31,7 @@ public class KinoManagerTest {
     }
 
     @Test
-    public void shouldReturnAllMoviesInOrder() {
+    public void shouldReturnAllFilmsInOrder() {
         KinoManager manager = new KinoManager();
 
         manager.addFilms("Мстители");
@@ -75,7 +75,7 @@ public class KinoManagerTest {
     }
 
     @Test
-    public void shouldReturnLastMoviesWithDefaultLimit() {
+    public void shouldReturnLastFilmsWithDefaultLimit() {
         KinoManager manager = new KinoManager();
 
         manager.addFilms("Быстрее пули");
@@ -92,7 +92,7 @@ public class KinoManagerTest {
     }
 
     @Test
-    public void shouldReturnEmptyWhenNoMovies() {
+    public void shouldReturnEmptyWhenNoFilms() {
         KinoManager manager = new KinoManager();
         ;
 
