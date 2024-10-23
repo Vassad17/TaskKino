@@ -12,7 +12,7 @@ public class KinoManager {
         this.limit = limit;
     }
 
-    public void addFilms (String Films) {
+    public void addFilms(String Films) {
         String[] tmp = new String[films.length + 1];
         for (int i = 0; i < films.length; i++) {
             tmp[i] = films[i];
@@ -28,11 +28,11 @@ public class KinoManager {
     public String[] findLast() {
         int limitFilmsSize = Math.min(films.length, limit);
         String[] limitFilms = new String[limitFilmsSize];
-        for (int i = 0; i < limitFilmsSize; i++){
+        for (int i = 0; i < limitFilmsSize; i++) {
             limitFilms[i] = films[films.length - 1 - i];
         }
         return limitFilms;
     }
 
 
-    }
+}
